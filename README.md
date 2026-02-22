@@ -276,4 +276,17 @@ mutation CreateStudent {
     name
   }
 }
+# SAMPLE SUBSCRIPTION 
+subscription {
+  studentEnrolled {
+    id
+    student {
+      name
+    }
+    course {
+      title
+    }
+  }
+}
 # OUTPUT
+
